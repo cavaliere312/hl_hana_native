@@ -1,0 +1,6 @@
+
+SELECT * FROM "PUBLIC"."M_INIFILE_CONTENTS" WHERE FILE_NAME='indexserver.ini' or FILE_NAME='dpserver.ini';
+ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpframework') = 'INFO' WITH RECONFIGURE;
+ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpdistributor') = 'INFO' WITH RECONFIGURE;
+ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpreceiver') = 'INFO' WITH RECONFIGURE;
+ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpserver') = 'INFO' WITH RECONFIGURE;
