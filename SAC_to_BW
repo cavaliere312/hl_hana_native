@@ -1,0 +1,20 @@
+GEtting subscription Realtime SAC to BW
+
+select count(*) from "/BIC/CMTDS_SLSP00002000001";
+select count(*) from "/BIC/CMVDS_SLSP00002000001";
+
+set schema "SAPHANADB";
+select count(*) from "/BIC/CMVDS_BOM00001000001";
+select count(*) from "/BIC/CMTDS_BOM00001000001";
+
+--Remote Table in SAC
+select count(*) from "/BIC/CMVDS_DUMM00001000001";
+-- Table in HANA DB
+select count(*) from "/BIC/CMTDS_DUMM00001000001";
+
+--Remote Table in SAC
+select count(*) from "/BIC/CMVDS_DUMM00001000001";
+-- Table in HANA DB
+select count(*) from "/BIC/CMTDS_DUMM00001000001";
+
+select * from "PUBLIC"."REMOTE_SUBSCRIPTION_EXCEPTIONS" 
