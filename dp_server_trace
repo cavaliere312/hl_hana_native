@@ -4,3 +4,9 @@ ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpfram
 ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpdistributor') = 'INFO' WITH RECONFIGURE;
 ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpreceiver') = 'INFO' WITH RECONFIGURE;
 ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'dpserver') = 'INFO' WITH RECONFIGURE;
+
+
+ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'DPApplierFlow') = 'DEBUG' WITH RECONFIGURE;
+ALTER SYSTEM ALTER CONFIGURATION ('dpserver.ini','SYSTEM') SET ('trace', 'DPDistributorFlow') = 'DEBUG' WITH RECONFIGURE;
+ALTER SYSTEM ALTER CONFIGURATION ('indexserver.ini','SYSTEM') SET ('trace', 'DPApplierFlow') = 'DEBUG' WITH RECONFIGURE;
+
